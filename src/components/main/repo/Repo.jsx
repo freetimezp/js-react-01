@@ -1,5 +1,6 @@
 import React from 'react';
 import './repo.less';
+import { Link } from 'react-router-dom';
 
 const Repo = ({ repo }) => {
 
@@ -7,7 +8,9 @@ const Repo = ({ repo }) => {
         <div className='repo'>
             <div className="repo-header">
                 <div className="repo-header-name">
-                    {repo.name}
+                    <Link to={`/card/${repo.name}`}>
+                        {repo.name}
+                    </Link>
                 </div>
                 <div className="repo-header-stars">
                     {repo.stargazers_count}
