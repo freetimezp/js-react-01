@@ -8,7 +8,7 @@ const Repo = ({ repo }) => {
         <div className='repo'>
             <div className="repo-header">
                 <div className="repo-header-name">
-                    <Link to={`/card/${repo.name}`}>
+                    <Link to={`/card/${repo.owner.login}/${repo.name}`}>
                         {repo.name}
                     </Link>
                 </div>

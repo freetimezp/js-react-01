@@ -10,7 +10,7 @@ const App = () => {
         <div className="container">
             <Routes>
                 <Route exact path="/" element={<Main />} />
-                <Route path={`/card/:name`} element={<Card />} />
+                <Route path={`/card/:username/:reponame`} element={<Card />} />
             </Routes>
         </div>
     );
